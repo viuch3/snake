@@ -3,6 +3,7 @@ class Board:
     def __init__(self, x, y):
         self.board = [["0" for _ in range(x)] for _ in range(y)]
         self.snake = [[y // 2, x // 2]]
+        self.snakeInit()
 
     def snakeInit(self):
         if len(self.snake) == 1:
